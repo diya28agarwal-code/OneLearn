@@ -1,0 +1,557 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>OneLearn | Quality Education for Everyone</title>
+
+    <meta name="description"
+          content="Discover free and paid courses from multiple learning platforms in one place.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <!-- CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ================= HEADER ================= -->
+
+    <header class="header">
+        <div class="logo">
+            <span class="logo-icon">🎓</span>
+            <div>
+                <h2>OneLearn</h2>
+                <p>Learn Today | Lead Tomorrow</p>
+            </div>
+        </div>
+
+        <nav class="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#categories">Categories</a>
+            <a href="#resources">Resources</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="header-actions">
+            <form class="header-search" id="headerSearchForm">
+                <input
+                    type="search"
+                    id="headerSearch"
+                    placeholder="Search courses..."
+                    aria-label="Search courses"
+                >
+                <button type="submit" aria-label="Submit search">⌕</button>
+            </form>
+
+            <button class="icon-button" type="button"
+                    aria-label="Notifications">♧</button>
+
+            <button class="icon-button" type="button"
+                    aria-label="User profile">👤</button>
+        </div>
+    </header>
+
+
+    <main>
+
+        <!-- ================= HERO SECTION ================= -->
+
+        <section class="hero" id="home">
+
+            <div class="hero-content">
+                <p class="eyebrow">
+                    LEARN • GROW • BUILD YOUR FUTURE
+                </p>
+
+                <h1>
+                    Quality Education<br>
+                    for <span>Everyone</span>
+                </h1>
+
+                <p class="hero-description">
+                    One platform. All learning opportunities.
+                    Discover free and paid courses from top platforms,
+                    explore various subjects, and take the next step
+                    towards your dreams.
+                </p>
+
+                <form class="hero-search" id="heroSearchForm">
+                    <input
+                        type="search"
+                        id="heroSearch"
+                        placeholder="Search for courses, topics or skills..."
+                        aria-label="Search for courses, topics or skills"
+                    >
+                    <button type="submit" aria-label="Search">⌕</button>
+                </form>
+
+                <div class="hero-highlights">
+                    <div class="highlight">
+                        <span>♧</span>
+                        <p>Free & Paid<br>Courses</p>
+                    </div>
+
+                    <div class="highlight">
+                        <span>🌐</span>
+                        <p>Top Learning<br>Platforms</p>
+                    </div>
+
+                    <div class="highlight">
+                        <span>▦</span>
+                        <p>Multiple<br>Categories</p>
+                    </div>
+
+                    <div class="highlight">
+                        <span>✓</span>
+                        <p>Learn Anytime,<br>Anywhere</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="hero-decoration decoration-one">✦</div>
+                <div class="hero-decoration decoration-two">♡</div>
+
+                <div class="hero-illustration">
+                    <div class="hero-circle"></div>
+
+                    <img
+                        src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=900&q=85"
+                        alt="Student learning with a laptop"
+                    >
+                </div>
+
+                <div class="floating-note note-one">
+                    <span>✦</span> Learn New Skills
+                </div>
+
+                <div class="floating-note note-two">
+                    Build Your Career ♡
+                </div>
+            </div>
+
+        </section>
+
+
+        <!-- ================= CATEGORIES ================= -->
+
+        <section class="section categories-section" id="categories">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Popular Categories</h2>
+                    <p>Explore courses in your area of interest.</p>
+                </div>
+
+                <a href="#courses" class="text-link">
+                    View All Categories →
+                </a>
+            </div>
+
+            <div class="category-grid">
+
+                <a href="#courses" class="category-card" data-category="technology">
+                    <span class="category-icon blue">💻</span>
+                    <h3>Technology & Programming</h3>
+                    <p>Code your future</p>
+                </a>
+
+                <a href="#courses" class="category-card" data-category="business">
+                    <span class="category-icon orange">📊</span>
+                    <h3>Business & Management</h3>
+                    <p>Lead with confidence</p>
+                </a>
+
+                <a href="#courses" class="category-card" data-category="design">
+                    <span class="category-icon purple">🎨</span>
+                    <h3>Design & Creative</h3>
+                    <p>Bring ideas to life</p>
+                </a>
+
+                <a href="#courses" class="category-card" data-category="data">
+                    <span class="category-icon pink">🤖</span>
+                    <h3>Data Science & AI</h3>
+                    <p>Discover innovation</p>
+                </a>
+
+                <a href="#courses" class="category-card" data-category="health">
+                    <span class="category-icon red">♡</span>
+                    <h3>Health & Fitness</h3>
+                    <p>Invest in yourself</p>
+                </a>
+
+                <a href="#courses" class="category-card" data-category="language">
+                    <span class="category-icon cyan">文</span>
+                    <h3>Language Learning</h3>
+                    <p>Connect with the world</p>
+                </a>
+
+            </div>
+        </section>
+
+
+        <!-- ================= FEATURED COURSES ================= -->
+
+        <section class="section courses-section" id="courses">
+
+            <div class="section-heading course-heading">
+                <div>
+                    <h2>Featured Courses</h2>
+                    <p>Top picks from leading learning platforms.</p>
+                </div>
+
+                <div class="course-filters" aria-label="Filter courses">
+                    <button class="filter-btn active" type="button"
+                            data-filter="all">All</button>
+
+                    <button class="filter-btn" type="button"
+                            data-filter="free">Free Courses</button>
+
+                    <button class="filter-btn" type="button"
+                            data-filter="paid">Paid Courses</button>
+                </div>
+            </div>
+
+            <div class="course-grid" id="courseGrid">
+
+                <!-- COURSE 1 -->
+
+                <article class="course-card"
+                         data-type="free"
+                         data-category="technology">
+
+                    <div class="course-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=700&q=80"
+                            alt="Programming code on a computer"
+                            loading="lazy"
+                        >
+                        <span class="price-badge free">Free</span>
+                    </div>
+
+                    <div class="course-info">
+                        <span class="provider">Coursera</span>
+                        <h3>Introduction to Python Programming</h3>
+
+                        <div class="course-rating">
+                            <span>★ 4.8</span>
+                            <span>(12.4k reviews)</span>
+                        </div>
+
+                        <div class="course-meta">
+                            <span>Beginner</span>
+                            <span>4 weeks</span>
+                        </div>
+
+                        <div class="course-bottom">
+                            <strong class="free-price">Free</strong>
+                            <a href="https://www.coursera.org/"
+                               target="_blank" rel="noopener noreferrer">
+                                View Course ↗
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- COURSE 2 -->
+
+                <article class="course-card"
+                         data-type="paid"
+                         data-category="design">
+
+                    <div class="course-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?auto=format&fit=crop&w=700&q=80"
+                            alt="Web and user interface design workspace"
+                            loading="lazy"
+                        >
+                        <span class="price-badge paid">Paid</span>
+                    </div>
+
+                    <div class="course-info">
+                        <span class="provider udemy">Udemy</span>
+                        <h3>UI/UX Design Fundamentals</h3>
+
+                        <div class="course-rating">
+                            <span>★ 4.7</span>
+                            <span>(8.9k reviews)</span>
+                        </div>
+
+                        <div class="course-meta">
+                            <span>All levels</span>
+                            <span>6 weeks</span>
+                        </div>
+
+                        <div class="course-bottom">
+                            <strong>₹1,499</strong>
+                            <a href="https://www.udemy.com/"
+                               target="_blank" rel="noopener noreferrer">
+                                View Course ↗
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- COURSE 3 -->
+
+                <article class="course-card"
+                         data-type="free"
+                         data-category="data">
+
+                    <div class="course-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=700&q=80"
+                            alt="Data analysis dashboard on a screen"
+                            loading="lazy"
+                        >
+                        <span class="price-badge free">Free</span>
+                    </div>
+
+                    <div class="course-info">
+                        <span class="provider edx">edX</span>
+                        <h3>Data Science Essentials</h3>
+
+                        <div class="course-rating">
+                            <span>★ 4.6</span>
+                            <span>(6.7k reviews)</span>
+                        </div>
+
+                        <div class="course-meta">
+                            <span>Intermediate</span>
+                            <span>8 weeks</span>
+                        </div>
+
+                        <div class="course-bottom">
+                            <strong class="free-price">Free</strong>
+                            <a href="https://www.edx.org/"
+                               target="_blank" rel="noopener noreferrer">
+                                View Course ↗
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+
+                <!-- COURSE 4 -->
+
+                <article class="course-card"
+                         data-type="paid"
+                         data-category="business">
+
+                    <div class="course-image">
+                        <img
+                            src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?auto=format&fit=crop&w=700&q=80"
+                            alt="Team collaborating on a project"
+                            loading="lazy"
+                        >
+                        <span class="price-badge paid">Paid</span>
+                    </div>
+
+                    <div class="course-info">
+                        <span class="provider linkedin">LinkedIn Learning</span>
+                        <h3>Business Strategy and Innovation</h3>
+
+                        <div class="course-rating">
+                            <span>★ 4.5</span>
+                            <span>(5.2k reviews)</span>
+                        </div>
+
+                        <div class="course-meta">
+                            <span>Intermediate</span>
+                            <span>4 weeks</span>
+                        </div>
+
+                        <div class="course-bottom">
+                            <strong>₹2,499</strong>
+                            <a href="https://www.linkedin.com/learning/"
+                               target="_blank" rel="noopener noreferrer">
+                                View Course ↗
+                            </a>
+                        </div>
+                    </div>
+                </article>
+
+            </div>
+
+            <p class="no-results" id="noResults" hidden>
+                No courses found. Try another search or filter.
+            </p>
+
+        </section>
+
+
+        <!-- ================= WHY CHOOSE US ================= -->
+
+        <section class="section why-section" id="about">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Why Choose OneLearn?</h2>
+                    <p>Because your education matters.</p>
+                </div>
+            </div>
+
+            <div class="benefits-grid">
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">🔗</span>
+                    <div>
+                        <h3>All in One Place</h3>
+                        <p>
+                            Discover free and paid learning opportunities
+                            from multiple platforms.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">◷</span>
+                    <div>
+                        <h3>Save Time & Effort</h3>
+                        <p>
+                            Compare course options without searching
+                            every website separately.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="benefit-card">
+                    <span class="benefit-icon">📅</span>
+                    <div>
+                        <h3>Learn at Your Pace</h3>
+                        <p>
+                            Find learning opportunities that fit your
+                            schedule and goals.
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= EDUCATION MISSION ================= -->
+
+        <section class="mission-banner" id="resources">
+
+            <div>
+                <p class="eyebrow">YOUR LEARNING JOURNEY STARTS HERE</p>
+                <h2>OneLearn</h2>
+                <p>One Platform. Endless Opportunities.</p>
+
+                <a href="#courses" class="primary-btn">
+                    Explore Courses →
+                </a>
+            </div>
+
+            <div class="mission-illustration" aria-hidden="true">
+                <span>📚</span>
+                <span>🌱</span>
+                <span>💡</span>
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer class="footer">
+
+        <div class="footer-brand">
+            <h2>🎓 OneLearn</h2>
+            <p>Learn Today | Lead Tomorrow</p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer navigation">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#categories">Categories</a>
+            <a href="#about">About</a>
+        </nav>
+
+        <div class="footer-message">
+            <p>Making quality education accessible to everyone.</p>
+            <p>© <span id="currentYear">2026</span> OneLearn. All rights reserved.</p>
+        </div>
+
+    </footer>
+
+    
+<!-- OneLearn Learning Assistant -->
+<div id="onelearn-chatbot">
+  <button id="onelearn-chat-toggle" type="button"
+          aria-label="Open OneLearn Learning Assistant"
+          aria-expanded="false">
+    💬 Ask OneLearn
+  </button>
+
+  <section id="onelearn-chat-window"
+           aria-label="OneLearn Learning Assistant"
+           hidden>
+    <header class="onelearn-chat-header">
+      <div>
+        <strong>🎓 OneLearn Assistant</strong>
+        <small>Your learning companion</small>
+      </div>
+      <button id="onelearn-chat-close"
+              type="button"
+              aria-label="Close chat">×</button>
+    </header>
+
+    <div id="onelearn-chat-messages"
+         role="log"
+         aria-live="polite"
+         aria-label="Chat messages">
+      <div class="onelearn-message bot">
+        Hi! 👋 Welcome to OneLearn! I'm your learning assistant.
+        Ask me about courses, skills, free resources, or how to get started.
+      </div>
+    </div>
+
+    <div class="onelearn-quick-actions">
+      <button type="button" data-question="free courses">
+        Free courses
+      </button>
+      <button type="button" data-question="web development">
+        Web development
+      </button>
+      <button type="button" data-question="career guidance">
+        Career guidance
+      </button>
+    </div>
+
+    <form id="onelearn-chat-form">
+      <input id="onelearn-chat-input"
+             type="text"
+             placeholder="Ask me anything..."
+             aria-label="Type your question"
+             autocomplete="off"
+             required>
+      <button type="submit">Send</button>
+    </form>
+    <p class="onelearn-chat-note">
+      Demo assistant · Responses are predefined
+    </p>
+  </section>
+</div>
+
+
+
+    <!-- JavaScript file -->
+    <script src="script.js"></script>
+
+</body>
+</html>
